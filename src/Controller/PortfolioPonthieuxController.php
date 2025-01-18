@@ -15,6 +15,12 @@ final class PortfolioPonthieuxController extends AbstractController{
         ]);
     }
 
+    #[Route('/cv', name: 'cv')]
+    public function cv(): Response
+    {
+    return $this->render('portfolio_ponthieux/cv.html.twig');
+    }
+
     #[Route('/portfolio', name: 'portfolio')]
     public function monportfolio(): Response
     {
