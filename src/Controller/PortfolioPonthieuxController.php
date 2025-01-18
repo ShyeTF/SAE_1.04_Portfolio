@@ -23,5 +23,11 @@ final class PortfolioPonthieuxController extends AbstractController{
         ]);
     }
 
+    #[Route('/passions', name: 'passions')]
+    public function passions(): Response
+    {
+    return $this->render('portfolio_ponthieux/passions.html.twig');
+    }  
+
 }
 
