@@ -2,23 +2,68 @@
 
 {% block body %}
 <br>
-<div class="card border-dark mb-3">
-  <h3 class="card-header">Serveur DIY</h3>
-  <div class="card-body">
-    <h5 class="card-title">Serveur NAS - Machine Virtuelle</h5>
-    <p class="card-text">Mon premier serveur de stockage en réseau était un NAS Synology DS220J équipé de 2x4To IronWolf, idéal pour commencer à prendre en mains cet univers du stockage réseau et de la gestion de ses utilisateurs. Arrivant rapidement à bout de ces performances et à force de regarder des vidéos de personnes montant leur propre serveur NAS DIY, je me suis décidé à monter le miens. Je voulais en faire un mélange entre un serveur NAS ainsi qu'un serveur de machine virtuelle pour héberger des petits services comme Home Assistant, Nginx, etc...</p>
+<div class="container">
+  <!-- Module de navigation centré horizontalement -->
+  <div class="d-flex justify-content-center mb-4">
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+      <label class="btn btn-outline-danger" for="btnradio1" onclick="window.location.href='/projets';">Projets</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+      <label class="btn btn-outline-success" for="btnradio2" onclick="window.location.href='/passions';">Passions</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btnradio3" onclick="window.location.href='/loisirs';">Loisirs</label>
+    </div>
   </div>
-  <img src="https://lh4.googleusercontent.com/35EMycmyiH5A-Noi1V0MnSRO7VWJPGT7wwnAuoQsTpdBVVsoZAjwNRt90Y563mkpXFNJdYwjRH2HwZQQrNBQ_YzDmtioeX_QQttZ71BpjVnvfOcYKcMb-5yAn4mCSgBtzA=w1280" 
-     class="d-block user-select-none" 
-     style="width: auto; height: 400px; object-fit: contain;" 
-     alt="Image cap">
-  <div class="card-body">
-    <p class="card-text text-center">Plus d'informations disponible sur mon site web 
-    <a href="https://www.allmyprojects.fr/" target="_blank" rel="noopener noreferrer">www.allmyprojects.fr</a>
-    </p>
-    <p class="card-text text-center">Pour plus de précisions sur ce projet, rendez-vous sur 
-    <a href="https://www.allmyprojects.fr/projets/serveur-nas-vm" target="_blank" rel="noopener noreferrer">la page en question</a>
-    </p>
+
+  <!-- Contenu principal -->
+  <div class="row">
+    <!-- Première carte -->
+    <div class="col-md-6 mb-4">
+      <div class="card border-success rounded">
+        <h3 class="card-header bg-success text-light rounded-top">Premier PC</h3>
+        <div class="card-body">
+          <h5 class="card-title">Mon Premier PC</h5>
+          <p class="card-text">Mon premier ordinateur était un PC portable basique avec un Intel Celeron et 4 Go de RAM, juste assez pour la bureautique mais pas pour les jeux. Malgré cela, j'ai découvert Minecraft, même si jouer à 25 fps était une nouveauté pour moi, je ne m'en plaignais pas. Ensuite, je suis passé sur un PC portable "gaming" avec un Intel Core i5, 8 Go de RAM et une GTX 1050, ce qui m'a permis d'explorer d'autres jeux dans des conditions correctes. Au fil du temps, j'ai amélioré ce PC en ajoutant 8 Go de RAM supplémentaires et un SSD M.2 de 1 To pour plus de confort. C'est à ce moment-là que j'ai découvert l'univers des composants informatiques et que j'ai décidé de confectionner ma propre tour tout en relevant les défis techniques et pouvoir ainsi profiter d'une meilleure expérience de jeux.</p>
+        </div>
+        <img src="https://lh6.googleusercontent.com/X9lWpAaDSvrQoziyFA10gNnwXFRtd2GE1AxEqXCWCX_agJNE7092D31KDxJyepSVN2Htjqht7K4NwT3U8QslhkDNnD_Bo5KvZde9kf6a8kFadzB6IIaJUjgisn_dLD46JA=w1280" 
+            class="d-block user-select-none rounded-bottom" 
+            style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
+            alt="Mon Premier PC"> 
+        <div class="card-body">
+          <p class="card-text text-center">Lien direct vers le projet sur 
+          <a href="https://www.allmyprojects.fr/mon-%C3%A9quipement/1er-pc" target="_blank" rel="noopener noreferrer">cette page.</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Deuxième carte -->
+    <div class="col-md-6 mb-4">
+      <div class="card border-success rounded">
+        <h3 class="card-header bg-success text-light rounded-top">Second PC</h3>
+        <div class="card-body">
+          <h5 class="card-title">Mon Second PC</h5>
+          <p class="card-text">J'ai adoré choisir et monter les composants de ma première tour mais au fil du temps mes envies ont changées... Du fait de ces nombreux ventilateurs et LEDs mon 1er pc faisait pas mal de bruits et de lumières sur mon bureau et jouant de moins en moins aux jeux, j'étais de plus en plus dérangé par le bruit qu'il produisait. J'ai voulu opter pour une nouvelle configuration plus silencieux et discrète. Mais surtout compact pour que je puisses dans un futur le déménager pour mes études.  C'est pourquoi j'ai monté cette deuxième machine non sans négliger ses performances. </p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="https://lh5.googleusercontent.com/X8SplGmuFpuILdd-17MZryhclrqsZFZkL8EN2ufBRk2-I0verrSy2sOLxtck-RE3NnKwsg81K0D3fJdUX9FtSwZbu7GovmO-ZKEdMbtqsK_2jEoGL_rXRi0dpvDN_noM_A=w1280" 
+            class="d-block user-select-none rounded-bottom" 
+            style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
+            alt="Freebox Cooler"> 
+        <div class="card-body">
+          <p class="card-text text-center">Lien direct vers le projet sur 
+          <a href="https://www.allmyprojects.fr/mon-%C3%A9quipement/2e-pc" target="_blank" rel="noopener noreferrer">cette page.</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
   </div>
 </div>
 {% endblock %}

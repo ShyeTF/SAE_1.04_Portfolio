@@ -3,11 +3,11 @@
     <head>
         <meta charset="UTF-8">
         <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel= "stylesheet" href="https://bootswatch.com/5/quartz/bootstrap.min.css">
+        <link rel="stylesheet" href="https://bootswatch.com/5/morph/bootstrap.min.css">
         {% block stylesheets %}{% endblock %}
     </head>
-<body>
-    <nav class="navbar navbar-expand-lg bg-dark" data-bs-theme="dark">
+<body class="d-flex flex-column min-vh-100">
+    <nav class="navbar navbar-expand-lg bg-light" data-bs-theme="light">
         <div class="container-fluid">
             <a class="navbar-brand" href="/">SymBlog</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarColor02" aria-controls="navbarColor02" aria-expanded="false" aria-label="Toggle navigation">
@@ -33,10 +33,19 @@
             </div>
         </div>
     </nav>
-    <div class="container">
+    <div class="container flex-grow-1">
         {% block body %}{% endblock %}
     </div>
-
+    <footer class="bg-light text-center text-lg-start mt-auto">
+    <div class="container p-3">
+        <p class="mb-0 text-center">
+            &copy; {{ "now"|date("Y") }} SymBlog. Tous droits réservés.
+        </p>
+        <p class="mb-0 text-center">
+            Développé par <a href="https://www.linkedin.com/in/l%C3%A9o-ponthieux/" target="_blank" class="text-decoration-none text-primary">Léo Ponthieux</a>
+        </p>
+    </div>
+</footer>
     {% block javascripts %}{% endblock %}
 </body>
 </html>

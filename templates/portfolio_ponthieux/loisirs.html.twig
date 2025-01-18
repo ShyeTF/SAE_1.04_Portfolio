@@ -1,0 +1,64 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<br>
+<div class="container">
+  <!-- Module de navigation centré horizontalement -->
+  <div class="d-flex justify-content-center mb-4">
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+      <label class="btn btn-outline-danger" for="btnradio1" onclick="window.location.href='/projets';">Projets</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+      <label class="btn btn-outline-success" for="btnradio2" onclick="window.location.href='/passions';">Passions</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btnradio3" onclick="window.location.href='/loisirs';">Loisirs</label>
+    </div>
+  </div>
+
+  <!-- Contenu principal -->
+  <div class="row">
+    <!-- Première carte -->
+    <div class="col-md-6 mb-4">
+      <div class="card border-primary rounded">
+        <h3 class="card-header bg-primary text-light rounded-top">Karting</h3>
+        <div class="card-body">
+          <h5 class="card-title">Circuit ActuaKart Lyon</h5>
+          <p class="card-text">Je fais quelques fois des sessions de karting, Essais, Qualifications et Course finale.</p>
+        </div>
+        <img src="https://www.actua-organisation.fr/wp-content/uploads/2020/12/sensation-1024x671.jpg" 
+            class="d-block user-select-none rounded-bottom" 
+            style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
+            alt="Mon Premier PC"> 
+        <div class="card-body">
+        </div>
+      </div>
+    </div>
+
+    <!-- Deuxième carte -->
+    <div class="col-md-6 mb-4">
+      <div class="card border-primary rounded">
+        <h3 class="card-header bg-primary text-light rounded-top">Modélisme RC</h3>
+        <div class="card-body">
+          <h5 class="card-title">Mon Second PC</h5>
+          <p class="card-text">Il y a quelques années je réalisais des vidéos sur YouTube mettant en scène 
+          ma voiture radio-commandée.</p>
+        </div>
+
+        <img src="https://img.youtube.com/vi/tMqKV1DxUrg/maxresdefault.jpg" 
+            class="d-block user-select-none rounded-bottom" 
+            style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
+            alt="Freebox Cooler"> 
+        <div class="card-body">
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <p class="card-text text-center">Vidéos disponibles sur ma  
+          <a href="https://www.youtube.com/@shye_tf3742" target="_blank" rel="noopener noreferrer">chaine YouTube</a>
+          </p>
+
+</div>
+{% endblock %}

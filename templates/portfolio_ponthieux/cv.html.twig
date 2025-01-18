@@ -6,71 +6,108 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Léo Ponthieux</title>
-    <!-- Intégration du thème Bootstrap Quartz -->
-    <link href="https://cdn.jsdelivr.net/npm/bootswatch@5.3.2/dist/quartz/bootstrap.min.css" rel="stylesheet">
+    <!-- Intégration du thème Bootstrap Morph -->
+    <link href="https://bootswatch.com/5/morph/bootstrap.min.css" rel="stylesheet">
 </head>
-<body class="bg-dark text-light">
-    <div class="container my-5 p-4 bg-secondary rounded shadow">
-        <h1 class="text-center text-warning">Léo Ponthieux</h1>
-        <h3 class="text-dark">Étudiant - BUT Réseau & Télécommunication</h3>
-        <p class="text-dark">
-            Étudiant en 1ère année de BUT Réseaux & Télécommunication, je suis à la recherche d'un emploi étudiant. J'aimerais utiliser mon temps à bon escient pour ainsi financer mes études et débuter de manière régulière dans le monde du travail.
-        </p>
+<body class="bg-light text-dark">
+    <div class="container my-5 p-4 bg-white rounded shadow-lg">
+        <!-- En-tête -->
+        <div class="text-center mb-5">
+            <h1 class="text-primary fw-bold display-4">Léo Ponthieux</h1>
+            <h3 class="text-muted">Étudiant - BUT Réseau & Télécommunication</h3>
+            <p>Étudiant en 1ère année de BUT Réseaux & Télécommunication, je suis passionné par l'informatique et les nouvelles technologies.</p>
+        </div>
         
-        <div class="mt-4">
-            <h2 class="text-primary">Contact</h2>
-                <ul class="list-unstyled text-dark">
-                    <li><strong>Email:</strong> <a href="mailto:ponthieux.leo@outlook.com" class="text-dark">ponthieux.leo@outlook.com</a></li>
+        <!-- Contact -->
+        <div class="card mb-4 shadow-sm border-0 rounded-4">
+            <div class="card-body">
+                <h2 class="card-title text-dark">Contact</h2>
+                <ul class="list-unstyled">
+                    <li><strong>Email:</strong> <a href="mailto:ponthieux.leo@outlook.com" class="text-decoration-none text-primary">ponthieux.leo@outlook.com</a></li>
                     <li><strong>Téléphone:</strong> 07 69 05 14 41</li>
-                    <li><strong>Adresse:</strong> 23 av. Carnot, Roanne (42300)</li>
-                    <li><strong>Site Web:</strong> <a href="https://www.allmyprojects.fr" target="_blank" class="text-dark">www.allmyprojects.fr</a></li>
+                    <li><strong>Adresse:</strong> 5 avenue de Paris, Roanne (42300)</li>
+                    <li><strong>Site Web:</strong> <a href="https://www.allmyprojects.fr" target="_blank" class="text-decoration-none text-primary">www.allmyprojects.fr</a></li>
                     <li><strong>Permis:</strong> Permis B, Véhicule personnel</li>
-                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/l%C3%A9o-ponthieux" target="_blank" class="text-dark">@léo-ponthieux</a></li>
+                    <li><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/l%C3%A9o-ponthieux" target="_blank" class="text-decoration-none text-primary">@léo-ponthieux</a></li>
                 </ul>
+            </div>
         </div>
-        
-        <div class="text-dark">
-            <h2 class="text-primary">Compétences</h2>
-            <ul>
-                <li>Suite Microsoft 365 : Gestion et traitement des données</li>
-                <li>SolidWorks : Modélisation 3D</li>
-                <li>Machine Virtuelle : Oracle VirtualBox, Proxmox, Docker</li>
-                <li>Langues : Anglais (Niveau Intermédiaire), Italien (Niveau Académique)</li>
-            </ul>
-        </div>
-        
-        <div class="mt-4">
-            <h2 class="text-primary">Centres d'intérêt</h2>
-            <ul>
-                <li>Informatique : Montage hardware, Serveur NAS, Câblage réseau</li>
-                <li>Musique</li>
-                <li>Voyage</li>
-                <li>Sport automobile</li>
-                <li>Réseaux sociaux</li>
-            </ul>
-        </div>
-        
-        <div class="mt-4">
-            <h2 class="text-primary">Diplômes et Formations</h2>
-            <ul>
-                <li><strong>BUT Réseaux & Télécommunications</strong> (depuis septembre 2024) - Université Jean Monnet, Roanne</li>
-                <li><strong>Baccalauréat Technologique STI2D</strong> (2022-2024) - Mention Bien, Lycée Saint Thomas d'Aquin, Oullins</li>
-                <li><strong>Baccalauréat Général</strong> (2021-2022) - Lycée René Descartes, Saint-Genis-Laval</li>
-                <li><strong>Diplôme National du Brevet</strong> (2017-2021) - Mention Bien, Collège Saint Thomas D'Aquin Veritas, Saint-Genis-Laval</li>
-            </ul>
-        </div>
-        
-        <div class="mt-4">
-            <h2 class="text-primary">Expériences Professionnelles</h2>
-            <ul>
-                <li><strong>Agent Municipal</strong> (juillet 2023) - Entretien et restauration du mobilier urbain, Communauté de Communes des Vallons du Lyonnais, Brindas</li>
-                <li><strong>Vendeur sur marché</strong> (mai 2023) - Vente de fruits et légumes, Agriculteur, Chaponost</li>
-            </ul>
-        </div>
-    </div>
 
-    <!-- Bootstrap JavaScript (optionnel pour des interactions) -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Diplômes et Formations -->
+        <div class="card mb-4 shadow-sm border-0 rounded-4 bg-light">
+    <div class="card-body p-4">
+        <h2 class="card-title text-dark">Diplômes et Formations</h2>
+        <ul class="list-unstyled mb-0">
+            <li class="mb-3">
+                <strong>BUT Réseaux & Télécommunications</strong> (depuis septembre 2024)<br>
+                <small>Université Jean Monnet, Roanne</small>
+            </li>
+            <li class="mb-3">
+                <strong>Baccalauréat Technologique STI2D</strong> (2022-2024) - Mention Bien<br>
+                <small>Lycée Saint Thomas d'Aquin, Oullins</small>
+            </li>
+            <li class="mb-3">
+                <strong>Baccalauréat Général</strong> (2021-2022)<br>
+                <small>Lycée René Descartes, Saint-Genis-Laval</small>
+            </li>
+            <li>
+                <strong>Diplôme National du Brevet</strong> (2017-2021) - Mention Bien<br>
+                <small>Collège Saint Thomas d'Aquin Veritas, Saint-Genis-Laval</small>
+            </li>
+        </ul>
+    </div>
+</div>
+
+        <!-- Expériences Professionnelles -->
+        <div class="card mb-4 shadow-sm border-0 rounded-4 bg-light">
+    <div class="card-body p-4">
+        <h2 class="card-title text-dark">Expériences Professionnelles</h2>
+        <ul class="list-unstyled mb-0">
+            <li class="mb-3">
+                <strong>Agent Municipal</strong> (juillet 2023)<br>
+                <small>Entretien et restauration du mobilier urbain, Communauté de Communes des Vallons du Lyonnais, Brindas</small>
+            </li>
+            <li>
+                <strong>Vendeur sur marché</strong> (mai 2023)<br>
+                <small>Vente de fruits et légumes, Agriculteur, Chaponost</small>
+            </li>
+        </ul>
+    </div>
+</div>
+
+        <!-- Compétences -->
+        <div class="card mb-4 shadow-sm border-0 rounded-4 bg-light">
+    <div class="card-body p-4">
+        <h2 class="card-title text-dark">Compétences</h2>
+        <ul class="list-unstyled mb-0">
+            <li class="mb-3">Suite Microsoft 365 : Gestion et traitement des données</li>
+            <li class="mb-3">SolidWorks : Modélisation 3D</li>
+            <li class="mb-3">Machine Virtuelle : Oracle VirtualBox, Proxmox, Docker</li>
+            <li>Langues : Anglais (Niveau Intermédiaire), Italien (Niveau Académique)</li>
+        </ul>
+    </div>
+</div>
+
+        <!-- Centres d'intérêt -->
+        <div class="card mb-4 shadow-sm border-0 rounded-4 bg-light">
+    <div class="card-body p-4">
+        <h2 class="card-title text-dark">Centres d'intérêt</h2>
+        <ul class="list-unstyled mb-0">
+            <li class="mb-3">Informatique : Montage hardware, Serveur NAS, Câblage réseau</li>
+            <li class="mb-3">Musique</li>
+            <li class="mb-3">Voyage</li>
+            <li class="mb-3">Sport automobile</li>
+            <li>Réseaux sociaux</li>
+        </ul>
+    </div>
+</div>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+        <div class="text-center mt-5">
+            <a href="/cv_form" class="btn btn-primary btn-lg">Télécharger mon CV</a>
+        </div>
+
 </body>
 </html>
 {% endblock %}

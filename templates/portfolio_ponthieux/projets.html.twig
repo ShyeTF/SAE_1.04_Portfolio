@@ -1,0 +1,69 @@
+{% extends "base.html.twig" %}
+
+{% block body %}
+<br>
+<div class="container">
+  <!-- Module de navigation centré horizontalement -->
+  <div class="d-flex justify-content-center mb-4">
+    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+      <label class="btn btn-outline-danger" for="btnradio1" onclick="window.location.href='/projets';">Projets</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+      <label class="btn btn-outline-success" for="btnradio2" onclick="window.location.href='/passions';">Passions</label>
+
+      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+      <label class="btn btn-outline-primary" for="btnradio3" onclick="window.location.href='/loisirs';">Loisirs</label>
+    </div>
+  </div>
+
+  <!-- Contenu principal -->
+  <div class="row">
+    <!-- Première carte -->
+    <div class="col-md-6 mb-4">
+      <div class="card border-danger rounded">
+        <h3 class="card-header bg-danger text-light rounded-top">Serveur DIY</h3>
+        <div class="card-body">
+          <h5 class="card-title">Serveur NAS - Machine Virtuelle</h5>
+          <p class="card-text">Mon premier serveur de stockage en réseau était un NAS Synology DS220J équipé de 2x4To IronWolf, idéal pour commencer à prendre en mains cet univers du stockage réseau et de la gestion de ses utilisateurs. Arrivant rapidement à bout de ces performances et à force de regarder des vidéos de personnes montant leur propre serveur NAS DIY, je me suis décidé à monter le miens. Je voulais en faire un mélange entre un serveur NAS ainsi qu'un serveur de machine virtuelle pour héberger des petits services comme Home Assistant, Nginx, etc...</p>
+        </div>
+        <img src="https://lh4.googleusercontent.com/35EMycmyiH5A-Noi1V0MnSRO7VWJPGT7wwnAuoQsTpdBVVsoZAjwNRt90Y563mkpXFNJdYwjRH2HwZQQrNBQ_YzDmtioeX_QQttZ71BpjVnvfOcYKcMb-5yAn4mCSgBtzA=w1280" 
+            class="d-block user-select-none rounded-bottom" 
+            style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
+            alt="Server NAS/VM DIY"> 
+        <div class="card-body">
+          <p class="card-text text-center">Lien direct vers le projet sur 
+          <a href="https://www.allmyprojects.fr/projets/serveur-nas-vm" target="_blank" rel="noopener noreferrer">cette page.</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Deuxième carte -->
+    <div class="col-md-6 mb-4">
+      <div class="card border-danger rounded">
+        <h3 class="card-header bg-danger text-light rounded-top">Refroidisseur Freebox Pop</h3>
+        <div class="card-body">
+          <h5 class="card-title">Freebox Cooler</h5>
+          <p class="card-text">Une idée qui m'est venue lors des début de cette petite box qui crashait de temps en temps. Après avoir remarqué des températures plutôt élevées à mon avis de débutant m'a fait murir l'idée de refroidir efficacement ce système. C'est là que la modélisation et la fabrication de ce refroidisseur à commencé.</p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <br>
+        <img src="https://lh3.googleusercontent.com/yWuvL_eAhfU_U8S6I8Y1KqwZdHnz1WV2vDXMnomjpEG4MOBp-lvTE_c0zVRoOCVW4ruhqjBB8ogqX5p2z4af6VT_qIgyYlsVEyiue4W-3Xyaf3YiWdKSoVAvRK3V3XMlIg=w1280" 
+            class="d-block user-select-none rounded-bottom" 
+            style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
+            alt="Freebox Cooler"> 
+        <div class="card-body">
+          <p class="card-text text-center">Lien direct vers le projet sur 
+          <a href="https://www.allmyprojects.fr/projets/freebox-cooler" target="_blank" rel="noopener noreferrer">cette page.</a>
+          </p>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+{% endblock %}
