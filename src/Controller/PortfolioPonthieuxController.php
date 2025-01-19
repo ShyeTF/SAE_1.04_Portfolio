@@ -53,12 +53,46 @@ final class PortfolioPonthieuxController extends AbstractController
         ]);
     }
 
-    #[Route('/cv_form', name: 'cv_form')]
-    public function cv_form(): Response
+    
+    #[Route('/cv_form', name: 'form_page', methods: ['GET'])]
+    public function form(): Response
     {
-        return $this->render('portfolio_ponthieux/cv_form.html.twig', [
-            'controller_name' => 'PortfolioPonthieuxController',
-        ]);
+        // Affiche le formulaire
+        return $this->render('portfolio_ponthieux/cv_form.html.twig');
     }
 
+    #[Route('/download', name: 'cv_download', methods: ['POST'])]
+public function download(Request $request): Response
+{
+    // Récupération des données du formulaire
+    $lastName = $request->request->get('last_name'); // Nom
+    $firstName = $request->request->get('first_name'); // Prénom
+    $email = $request->request->get('email');
+    $fileType = $request->request->get('file_type'); // pdf ou docx
+
+    // Validation des champs
+    if (!$lastName || !$firstName || !$email) {
+        $this->addFlash('error', 'Tous les champs sont obligatoires.');
+        return $this->redirectToRoute('form_page');
+    }
+
+    if (!filter_var($email, FILTER_VALIDATE_EMAIL)) {
+        $this->addFlash('error', 'Adresse email invalide.');
+        return $this->redirectToRoute('form_page');
+    }
+
+    // Chemin vers le fichier basé sur le type
+    $fileName = $fileType === 'docx' ? 'CV_Ponthieux_Léo.docx' : 'CV_Ponthieux_Léo.pdf';
+    $filePath = $this->getParameter('kernel.project_dir') . '/public/upload/' . $fileName;
+
+    // Vérifie si le fichier existe
+    if (!file_exists($filePath)) {
+        $this->addFlash('error', 'Le fichier demandé est introuvable.');
+        return $this->redirectToRoute('form_page');
+    }
+
+    // Envoi du fichier pour téléchargement
+    return $this->file($filePath, $fileName);
+}
+    
 }

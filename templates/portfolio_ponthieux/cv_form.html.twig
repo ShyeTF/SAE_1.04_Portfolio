@@ -5,28 +5,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inscription - Télécharger mon CV</title>
+    <title>Télécharger le fichier</title>
     <link href="https://bootswatch.com/5/morph/bootstrap.min.css" rel="stylesheet">
 </head>
 <body class="bg-light text-dark">
-    <div class="container my-5 p-4 bg-white rounded shadow-lg">
-        <h1 class="text-center text-primary">Inscription</h1>
-        <p class="text-center">Veuillez remplir le formulaire ci-dessous pour accéder à l'impression de mon CV.</p>
-        
-        <form action="{{ path('cv_download') }}" method="post" class="p-4">
-            <div class="mb-3">
-                <label for="name" class="form-label">Nom et Prénom</label>
-                <input type="text" id="name" name="name" class="form-control" required>
+    <div class="container my-5 p-4 bg-white rounded shadow-sm" style="max-width: 500px;">
+        <h1 class="text-center text-primary h5">Télécharger le fichier</h1>
+        <p class="text-center small">Veuillez remplir le formulaire pour accéder au téléchargement du fichier.</p>
+
+        {% for message in app.flashes('error') %}
+            <div class="alert alert-danger">{{ message }}</div>
+        {% endfor %}
+
+        <form action="{{ path('cv_download') }}" method="post" class="p-3">
+            <div class="row g-2">
+                <div class="col-md-6">
+                    <label for="last_name" class="form-label">Nom</label>
+                    <input type="text" id="last_name" name="last_name" class="form-control" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="first_name" class="form-label">Prénom</label>
+                    <input type="text" id="first_name" name="first_name" class="form-control" required>
+                </div>
             </div>
-            <div class="mb-3">
+            <div class="mb-3 mt-3">
                 <label for="email" class="form-label">Adresse Email</label>
                 <input type="email" id="email" name="email" class="form-control" required>
             </div>
-            <div class="mb-3">
-                <label for="phone" class="form-label">Numéro de Téléphone</label>
-                <input type="tel" id="phone" name="phone" class="form-control">
+            <div class="d-flex justify-content-between">
+                <button type="submit" name="file_type" value="pdf" class="btn btn-success">Télécharger en PDF</button>
+                <button type="submit" name="file_type" value="docx" class="btn btn-primary">Télécharger en DOCX</button>
             </div>
-            <button type="submit" class="btn btn-success btn-lg w-100">Imprimer mon CV</button>
         </form>
     </div>
 </body>
