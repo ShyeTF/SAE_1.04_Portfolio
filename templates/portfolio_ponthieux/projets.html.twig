@@ -9,13 +9,13 @@
   <div class="d-flex justify-content-center mb-4">
     <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
       <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-      <label class="btn btn-outline-danger" for="btnradio1" onclick="window.location.href='/projets';">Projets</label>
+      <label class="btn btn-outline-danger" for="btnradio1" onclick="window.location.href='/projets';">Projects</label>
 
       <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
       <label class="btn btn-outline-success" for="btnradio2" onclick="window.location.href='/passions';">Passions</label>
 
       <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-      <label class="btn btn-outline-primary" for="btnradio3" onclick="window.location.href='/loisirs';">Loisirs</label>
+      <label class="btn btn-outline-primary" for="btnradio3" onclick="window.location.href='/loisirs';">Entertainment</label>
     </div>
   </div>
 
@@ -24,18 +24,21 @@
     <!-- Première carte -->
     <div class="col-md-6 mb-4">
       <div class="card border-danger rounded">
-        <h3 class="card-header bg-danger text-light rounded-top">Serveur DIY</h3>
+        <h3 class="card-header bg-danger text-light rounded-top">DIY Server</h3>
         <div class="card-body">
-          <h5 class="card-title">Serveur NAS - Machine Virtuelle</h5>
-          <p class="card-text">Mon premier serveur de stockage en réseau était un NAS Synology DS220J équipé de 2x4To IronWolf, idéal pour commencer à prendre en mains cet univers du stockage réseau et de la gestion de ses utilisateurs. Arrivant rapidement à bout de ces performances et à force de regarder des vidéos de personnes montant leur propre serveur NAS DIY, je me suis décidé à monter le miens. Je voulais en faire un mélange entre un serveur NAS ainsi qu'un serveur de machine virtuelle pour héberger des petits services comme Home Assistant, Nginx, etc...</p>
+          <h5 class="card-title">NAS Server - Virtual Machine</h5>
+          <p class="card-text">My first network storage server was a Synology DS220J NAS equipped with 2x4TB IronWolf, ideal for getting to grips with the world of network storage and user management. 
+          the world of network storage and user management. Quickly coming to terms with this performance, and after watching videos of people 
+          setting up their own DIY NAS servers, I decided to build my own. I wanted to make it a mix between a NAS server and a virtual machine server 
+          to host small services like Home Assistant, Nginx, etc...</p>
         </div>
-        <img src="https://lh6.googleusercontent.com/fcoXBxKVv_Umz-3sBjbeXe-VH5q6azKzDnbPAziPhoaycVwHtK10X61SXCQxwU39X_h8-FANm_kFbK57WFv3AoPffWnpjlSMlB8tAQWaed6Ppk0ilG--UK7SEyAjlPKOkA=w1280" 
-            class="d-block user-select-none rounded-bottom" 
-            style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
-            alt="Server NAS/VM DIY"> 
+        <img src="{{ asset('picture/server1.jpg') }}" 
+     class="d-block user-select-none rounded-bottom" 
+     style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
+     alt="Mon Premier PC"> 
         <div class="card-body">
-          <p class="card-text text-center">Lien direct vers le projet sur 
-          <a href="https://www.allmyprojects.fr/projets/serveur-nas-vm" target="_blank" rel="noopener noreferrer">cette page.</a>
+          <p class="card-text text-center">Link to the projecct on
+          <a href="https://www.allmyprojects.fr/projets/serveur-nas-vm" target="_blank" rel="noopener noreferrer">this page.</a>
           </p>
 
         </div>
@@ -45,22 +48,24 @@
     <!-- Deuxième carte -->
     <div class="col-md-6 mb-4">
       <div class="card border-danger rounded">
-        <h3 class="card-header bg-danger text-light rounded-top">Refroidisseur Freebox Pop</h3>
+        <h3 class="card-header bg-danger text-light rounded-top">Freebox Pop Cooler</h3>
         <div class="card-body">
           <h5 class="card-title">Freebox Cooler</h5>
-          <p class="card-text">Une idée qui m'est venue lors des début de cette petite box qui crashait de temps en temps. Après avoir remarqué des températures plutôt élevées à mon avis de débutant m'a fait murir l'idée de refroidir efficacement ce système. C'est là que la modélisation et la fabrication de ce refroidisseur à commencé.</p>
+          <p class="card-text">An idea that came to me when I was just starting out with this little box that was crashing from time to time. 
+          After noticing some rather high temperatures, my beginner's opinion led me to the idea of cooling this system efficiently. 
+          That's when the modeling and manufacturing of this cooler began.</p>
         </div>
         <br>
         <br>
         <br>
         <br>
-        <img src="https://lh3.googleusercontent.com/yWuvL_eAhfU_U8S6I8Y1KqwZdHnz1WV2vDXMnomjpEG4MOBp-lvTE_c0zVRoOCVW4ruhqjBB8ogqX5p2z4af6VT_qIgyYlsVEyiue4W-3Xyaf3YiWdKSoVAvRK3V3XMlIg=w1280" 
-            class="d-block user-select-none rounded-bottom" 
-            style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
-            alt="Freebox Cooler"> 
+        <img src="{{ asset('picture/freebox_cooler1.jpg') }}" 
+     class="d-block user-select-none rounded-bottom" 
+     style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
+     alt="Mon Premier PC"> 
         <div class="card-body">
-          <p class="card-text text-center">Lien direct vers le projet sur 
-          <a href="https://www.allmyprojects.fr/projets/freebox-cooler" target="_blank" rel="noopener noreferrer">cette page.</a>
+          <p class="card-text text-center">Link to the projecct on 
+          <a href="https://www.allmyprojects.fr/projets/freebox-cooler" target="_blank" rel="noopener noreferrer">this page.</a>
           </p>
 
         </div>
