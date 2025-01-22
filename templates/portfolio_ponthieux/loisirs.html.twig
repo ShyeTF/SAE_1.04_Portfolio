@@ -1,67 +1,66 @@
 {% extends "base.html.twig" %}
 
-{% block title %}Loisirs{% endblock %}
+{% block title %}Entertainment{% endblock %}
 
 {% block body %}
 <br>
 <div class="container">
-  <!-- Module de navigation centré horizontalement -->
-  <div class="d-flex justify-content-center mb-4">
-    <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
-      <label class="btn btn-outline-danger" for="btnradio1" onclick="window.location.href='/projets';">Projects</label>
+    <!-- Module de navigation centré horizontalement -->
+    <div class="d-flex justify-content-center mb-4">
+        <div class="btn-group" role="group" aria-label="Basic radio toggle button group">
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio1" autocomplete="off">
+            <label class="btn btn-outline-danger" for="btnradio1" onclick="window.location.href='/projets';">Projects</label>
 
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
-      <label class="btn btn-outline-success" for="btnradio2" onclick="window.location.href='/passions';">Passions</label>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio2" autocomplete="off">
+            <label class="btn btn-outline-success" for="btnradio2" onclick="window.location.href='/passions';">Passions</label>
 
-      <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
-      <label class="btn btn-outline-primary" for="btnradio3" onclick="window.location.href='/loisirs';">Entertainment</label>
-    </div>
-  </div>
-
-  <!-- Contenu principal -->
-  <div class="row">
-    <!-- Première carte -->
-    <div class="col-md-6 mb-4">
-      <div class="card border-primary rounded">
-        <h3 class="card-header bg-primary text-light rounded-top">Karting</h3>
-        <div class="card-body">
-          <h5 class="card-title">Circuit ActuaKart Lyon</h5>
-          <p class="card-text">I sometimes do karting sessions, testing, qualifying and the final race.</p>
+            <input type="radio" class="btn-check" name="btnradio" id="btnradio3" autocomplete="off">
+            <label class="btn btn-outline-primary" for="btnradio3" onclick="window.location.href='/loisirs';">Entertainment</label>
         </div>
-        <br>
-        <img src="{{ asset('picture/karting1.jpg') }}" 
-     class="d-block user-select-none rounded-bottom" 
-     style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
-     alt="Mon Premier PC"> 
-        <div class="card-body">
-        </div>
-      </div>
     </div>
 
-    <!-- Deuxième carte -->
-    <div class="col-md-6 mb-4">
-      <div class="card border-primary rounded">
-        <h3 class="card-header bg-primary text-light rounded-top">Radio-controlled model making</h3>
-        <div class="card-body">
-          <h5 class="card-title">YouTubde Vidéos</h5>
-          <p class="card-text">A few years ago, I was making YouTube videos of my radio-controlled car. 
-          my radio-controlled car.</p>
+    <!-- Contenu principal -->
+    <div class="row">
+        <!-- Première carte -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-primary rounded">
+                <h3 class="card-header bg-primary text-light rounded-top">Karting</h3>
+                <div class="card-body">
+                    <h5 class="card-title">Circuit ActuaKart Lyon</h5>
+                    <p class="card-text">I sometimes do karting sessions, testing, qualifying and the final race.</p>
+                </div>
+                <br>
+                <img src="{{ asset('picture/karting1.jpg') }}" 
+                     class="d-block user-select-none rounded-bottom" 
+                     style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
+                     alt="Mon Premier PC"> 
+                <div class="card-body">
+                </div>
+            </div>
         </div>
 
-        <img src="{{ asset('picture/miniature1.jpg') }}" 
-     class="d-block user-select-none rounded-bottom" 
-     style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
-     alt="Mon Premier PC"> 
-        <div class="card-body">
+        <!-- Deuxième carte -->
+        <div class="col-md-6 mb-4">
+            <div class="card border-primary rounded">
+                <h3 class="card-header bg-primary text-light rounded-top">Radio-controlled model making</h3>
+                <div class="card-body">
+                    <h5 class="card-title">YouTube Videos</h5>
+                    <p class="card-text">A few years ago, I was making YouTube videos of my radio-controlled car.</p>
+                </div>
+                <br>
+                <img src="{{ asset('picture/miniature1.jpg') }}" 
+                     class="d-block user-select-none rounded-bottom" 
+                     style="width: auto; height: 300px; max-width: 100%; object-fit: contain;" 
+                     alt="Mon Premier PC"> 
+                <div class="card-body">
+                </div>
+            </div>
         </div>
-      </div>
     </div>
-  </div>
 
-  <p class="card-text text-center">Videos available on my 
-          <a href="https://www.youtube.com/@shye_tf3742" target="_blank" rel="noopener noreferrer">YouTube channel.</a>
-          </p>
-
+    <p class="card-text text-center">Videos available on my 
+        <a href="https://www.youtube.com/@shye_tf3742" target="_blank" rel="noopener noreferrer">YouTube channel.</a>
+    </p>
+    <br>
 </div>
 {% endblock %}
