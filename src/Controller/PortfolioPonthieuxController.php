@@ -61,6 +61,14 @@ final class PortfolioPonthieuxController extends AbstractController
         ]);
     }
 
+    #[Route('/rom-ar', name: 'rom-ar')]
+    public function romar(): Response
+    {
+        return $this->render('portfolio_ponthieux/rom-ar.html.twig', [
+            'controller_name' => 'PortfolioPonthieuxController',
+        ]);
+    }
+
     
     #[Route('/cv_form', name: 'form_page', methods: ['GET'])]
     public function form(): Response
